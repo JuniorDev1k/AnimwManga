@@ -1,15 +1,16 @@
 {
+  "homepage": "https://JuniorDev1.github.io/AnimwManga",
   "name": "my-project",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "build": "react scripts build",
+    "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.4.3",
@@ -20,7 +21,6 @@
     "react-router-dom": "^6.18.0"
   },
   "devDependencies": {
-    "homepage": "http://JuniorDev1k.github.io/AnimwManga",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react": "^4.0.3",
