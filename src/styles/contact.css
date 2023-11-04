@@ -1,0 +1,42 @@
+#Contact {
+  display: grid;
+  grid-template-columns: 60vw 1fr;
+  background-color: var(--bg-100);
+  padding: 20px;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.left h1 {
+  color: white;
+  font-size: 80px;
+  margin-bottom: 2rem;
+  letter-spacing: 0.4rem;
+  line-height: 6rem;
+}
+.left input {
+  padding: 10px 10rem;
+  border: none;
+  border-radius: 6px;
+  font-size: large;
+}
+.first-input {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#message {
+  margin-top: 4rem;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 26px;
+  padding: 1rem 10px;
+}

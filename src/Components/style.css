@@ -1,0 +1,111 @@
+#root {
+  --primary-100: #2e8b57;
+
+  --primary-200: #61bc84;
+
+  --primary-300: #c6ffe6;
+
+  --accent-100: #8fbc8f;
+
+  --accent-200: #345e37;
+
+  --text-100: #ffffff;
+
+  --text-200: #e0e0e0;
+
+  --bg-100: #1e1e1e;
+
+  --bg-200: #2d2d2d;
+
+  --bg-300: #454545;
+}
+@font-face {
+  font-family: robbto;
+  src: url(../../assets/Roboto-Regular.ttf);
+  src: url(../../assets/Roboto-Medium.ttf);
+  src: url(../../assets/Roboto-Bold.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#root {
+  display: grid;
+  grid-template-rows: 10vh, 2fr, 20vh;
+}
+/* }  home page */
+.home-sliders {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  background-color: var(--bg-100);
+}
+/* 
+another page */
+.main-anime-v1 {
+  min-height: 40vh;
+  display: flex;
+  background-color: var(--bg-100);
+  justify-content: center;
+  font-size: 40px;
+  padding-top: 4rem;
+}
+#anime-list {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  z-index: 333;
+}
+#anime-list input {
+  padding: 10px 10rem;
+  border: none;
+  border-radius: 10px;
+  color: var(--primary-200);
+}
+#anime-list button {
+  position: relative;
+  padding: 11px;
+  right: 10rem;
+  border-radius: 0 10px 10px 0;
+  border: 1px solid var(--accent-200);
+  background-color: #345e37;
+}
+.S-ANIMES-CARD {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 3rem;
+  padding: 10rem 2rem;
+}
+.S-ANIME-CARD {
+  height: 300px;
+  position: relative;
+}
+.S-ANIME-CARD img {
+  height: 80%;
+  width: 100%;
+  border-radius: 20px;
+
+  object-fit: cover;
+}
+.S-ANIME-CARD h3 {
+  color: var(--primary-100);
+}
+#TV {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  background-color: yellow;
+  padding: 3px;
+  border-radius: 3px 20px 0px 20px;
+  font-size: 24px;
+  color: black;
+}
+.S-ANIME-CARD .dettials {
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-100);
+  font-size: 26px;
+}

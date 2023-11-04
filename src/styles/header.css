@@ -1,0 +1,41 @@
+.header-content {
+  height: 110vh;
+  background: url("../../assets/background-01.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /* background-position: center; */
+}
+
+.header-content h1 {
+  margin-bottom: 5rem;
+
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+  font-size: 40px;
+}
+.header-btn {
+  display: flex;
+  gap: 10rem;
+}
+.header-btn button {
+  font-size: medium;
+
+  padding: 1rem 7rem;
+  border-radius: 20px 0 20px 0;
+  border: none;
+  cursor: pointer;
+  background-color: var(--primary-100);
+  color: white;
+  letter-spacing: 0.3rem;
+  transition: 0.4s ease;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.header-btn button:hover {
+  color: var(--bg-100);
+  background-color: var(--primary-300);
+}
