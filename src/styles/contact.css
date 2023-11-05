@@ -1,42 +1,104 @@
 #Contact {
   display: grid;
-  grid-template-columns: 60vw 1fr;
+  grid-template-columns: 1fr 1fr;
   background-color: var(--bg-100);
   padding: 20px;
+  min-height: 100svh;
+  gap: 1rem;
 }
 .left {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+
+  box-shadow: 0 4px 8px 0 var(--primary-100), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .left h1 {
   color: white;
-  font-size: 80px;
-  margin-bottom: 2rem;
-  letter-spacing: 0.4rem;
-  line-height: 6rem;
+  margin: 2em 0;
+  text-align: center;
 }
-.left input {
-  padding: 10px 10rem;
-  border: none;
-  border-radius: 6px;
-  font-size: large;
-}
-.first-input {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 2rem;
-}
-form {
+.formbox {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  align-items: center;
+  gap: 3em;
+}
+.formbox div {
+  width: 40em;
+  position: relative;
+}
+.formbox div input {
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px 15px;
+  border: 1px solid rgb(183, 183, 183);
+  outline: none;
+  background-color: #1e1e1e;
+  color: white;
+  font-size: 2em;
+}
+.formbox div input ~ span {
+  position: absolute;
+  transition: all 0.6s;
+  left: 0px;
+  padding: 10px;
+  color: rgb(199, 192, 192);
+}
+
+.formbox div input:valid ~ span {
+  color: rgb(75, 205, 75);
+  transform: translate(0, -40px);
+  z-index: 1;
+}
+.formbox div input:valid,
+.formbox div input:focus {
+  border: 1px solid rgb(75, 205, 75);
 }
 #message {
-  margin-top: 4rem;
-  border: none;
-  border-radius: 6px;
-  text-align: center;
-  font-size: 26px;
-  padding: 1rem 10px;
+  width: 100%;
+  outline: none;
+  border-radius: 10px;
+  background-color: #1e1e1e;
+  border: 1px solid rgb(75, 205, 75);
+  padding: 2em 1em;
+  font-size: 2em;
+  color: rgb(199, 192, 192);
+  position: relative;
+  transition: 0.4s ease;
+}
+#message:focus ~ span {
+  display: none;
+}
+.span-textarea {
+  position: absolute;
+  left: 20px;
+  top: 10%;
+  color: rgb(75, 205, 75);
+  font-size: 1em;
+}
+
+.form-btn {
+  width: 40em;
+  padding: 1em 0;
+  border-radius: 10px;
+  color: var(--primary-100);
+  font-size: 1em;
+  font-weight: bold;
+  background-color: var(--bg-100);
+  border: 2px solid grey;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.form-btn:hover {
+  color: white;
+  border: 1px solid var(--primary-100);
+  background-color: rgb(75, 205, 75);
+}
+.right {
+  background-image: url(../../assets/contact2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }

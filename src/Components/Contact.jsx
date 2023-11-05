@@ -7,17 +7,24 @@ const Contact = () => {
       <div id="Contact">
         <aside className="left">
           <h1> REACH OUT AND GET IN TOUCH</h1>
-          <p></p>
-          <form>
-            <div className="first-input">
-              <input type="text" placeholder="FIRST NAME" name="" id="" />
-              <input type="text" placeholder="LAST NAME" name="" id="" />
+          <form className="formbox">
+            <div className="input-box">
+              <input type="text" name="" id="" required />
+              <span>FIRST NAME</span>
             </div>
-
-            <input type="email" placeholder="EMAIL ADRESS" name="" id="" />
-            <textarea name="" id="message" cols="30" rows="10">
-              WRITE DOWN YOUR COMMENT
-            </textarea>
+            <div className="input-box">
+              <input type="text" required />
+              <span>LAST NAME</span>
+            </div>
+            <div className="input-box">
+              <input type="text" name="" id="" required />
+              <span>EMAIL</span>
+            </div>
+            <div className="input-box">
+              <textarea name="" id="message" cols="30" rows="2"></textarea>
+              <span className="span-textarea">Drop Down your Message </span>
+            </div>
+            <button className="form-btn">SUBMIT</button>
           </form>
         </aside>
         <aside className="right"></aside>
